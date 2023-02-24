@@ -50,7 +50,7 @@ resource "azurerm_app_service" "appservice" {
   //site_config {
     //dotnet_framework_version = "v5.0"
     //always_on                = true
-  }
+  
 
   app_settings = {
     "WEBSITES_ENABLE_APP_SERVICE_STORAGE" = "false"
@@ -60,3 +60,4 @@ resource "azurerm_app_service" "appservice" {
     "WEBSITES_PORT"                      = "80"
   }
 
+}
